@@ -369,7 +369,6 @@ document.addEventListener("DOMContentLoaded", () => {
       <li class="news-item" data-key="Adieu ma fem">2024 : Adieu ma fem </li>
       <li class="news-item" data-key="Sacrum">2024 : Sacrum </li>
       <li class="news-item" data-key="Sally's wet dream">2023 : Sally's wet dream </li>
-      <li class="news-item" data-key="t4t logs">2022 : t4t logs </li>
     </ul>
   `;
   newsNav.insertBefore(sommaire, newsContent); // insérer avant le container de texte
@@ -507,5 +506,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 });
+
 
 
