@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /testpagesecrete.html
 
-Sitemap: https://www.paolee.fr/sitemap.xml
+Sitemap: https://xn--paole-esa.fr/sitemap.xml
