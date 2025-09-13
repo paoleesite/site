@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AUTRES TEXTES</title>
+  <!-- Préchargement du CSS principal pour améliorer le LCP -->
+  <link rel="preload" href="css/autre.css?v=1.0" as="style">
+  <link rel="stylesheet" href="css/autre.css?v=1.0">
+  <link rel="stylesheet" href="css/cursor.css?v=1.0">
+  <link rel="stylesheet" href="css/cover.css?v=1.0">
+  <link rel="stylesheet" href="css/neons.css?v=1.0">
+</head>
+
+</head>
+
+<body>
+  <div class="cursor"></div>
+  <header class="site-header">
+    <nav class="goback">
+      <a href="index.html">Retour à l'accueil</a>
+    </nav>
+  </header>
+  <!-- <h1 class="neon">autres textes</h1>-->
+
+  <main class="site-content">
+
+    <section class="cover" id="cover" aria-hidden="true">
+      <a href="#">
+        <div class="half left">
+<img src="images/autres.webp?v=1.0" alt="Rideau moitié gauche">
+        </div>
+        <div class="half right">
+<img src="images/autres.webp?v=1.0" alt="Rideau moitié droite">
+        </div>
+      </a>
+      </div>
+    </section>
+
+    <nav class="news-nav " aria-label="Sommaire des nouvelles">
+    
+      <div id="news-container"></div>
+      <button id="download-pdf" style="display:none;">📄 Télécharger en PDF</button>
+    </nav>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Mon Site. Tous droits réservés.</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" defer></script>
+  <script src="js/news.js?v=1.0" defer></script>
+  <script src="js/cursor.js?v=1.0" defer></script>
+  <script src="js/cover.js?v=1.0" defer></script>
+
+
+</body>
+
+</html>
