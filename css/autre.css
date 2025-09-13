@@ -6,7 +6,26 @@
 .news-nav h2 {
   text-align: center;
 }
-
+#download-pdf{
+    background-color: #ec112e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 20px;
+      animation: flicker-random 1s infinite;
+    opacity:0.6;
+    font-family: 'Crevefinale', sans-serif;
+    text-transform: uppercase;  
+}
+.down-btn{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+}
 #sommaire ul {
   display: flex;
   list-style: none;
@@ -155,3 +174,4 @@ section.card {
     margin-top: 15px;
   }
 }
+
