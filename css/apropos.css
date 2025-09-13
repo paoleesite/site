@@ -1,19 +1,20 @@
-.container{
+.apropos{
     margin-left: 20px;
 }
-.container h2{
+.apropos h2{
     font-size: 1.5em;
 align-items: center;
 justify-content: center;
 }
-.container p{
+.apropos p{
     font-size: 1.2em;
     text-align: justify;
     margin-right: 20px;
 }
 
-.container a{
+.apropos a{
     color: #ec112e;
     text-decoration: none;
 
 }
+
