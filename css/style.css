@@ -234,6 +234,12 @@ width: 100%;
 @media (max-width: 768px) {
     .text-zone {
     background-image: url('../images/titrfesite.webp');
+        width: 100%;
+    left: 0%;
 
     }
+.cursor{ 
+    display: none;
+}
+
 }
