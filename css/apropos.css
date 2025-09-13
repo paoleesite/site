@@ -1,20 +1,21 @@
-.apropos{
+.credits-content{
     margin-left: 20px;
 }
-.apropos h2{
+.credits-content h2{
     font-size: 1.5em;
 align-items: center;
 justify-content: center;
 }
-.apropos p{
+.credits-content p{
     font-size: 1.2em;
     text-align: justify;
     margin-right: 20px;
 }
 
-.apropos a{
+.credits-content a{
     color: #ec112e;
     text-decoration: none;
 
 }
+
 
