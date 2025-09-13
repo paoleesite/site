@@ -4,31 +4,40 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PAOLEE - Auteure</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="site de l'autrice transfem Paolée, Littérature transfem, romance lesbienne, crimes sordides">
+  <link rel="canonical" href="https://www.paolee.fr/">
+<meta name="keywords" content="Paolée, transgenre, transfem, littérature, roman, nouvelle, poésie, théâtre, performance, lesbienne, littérature transfem, littérature lesbienne, thriller">
+<meta property="og:type" content="website">
+  <meta property="og:title" content="PAOLEE - Auteure">
+  <meta property="og:description" content="Littérature transfem, romance lesbienne, crimes sordides.">
+  <meta property="og:url" content="https://www.paolee.fr/">  
+
+<title>PAOLEE - Auteure</title>
+
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/cursor.css">
   <link rel="stylesheet" href="css/neons.css">
 
+  <link rel="preload" href="js/script.js?v=1.0" as="script">
 </head>
 
 <body>
   <div class="cursor"></div>
 
-  <!-- Encadré Neon à la place du header -->
   <section class="neon-header">
 
   </section>
 
-  <!-- Bannière principale -->
   <main class="container">
     <div class="text-zone">
-      <h1 class="neon-title titre-site">PAOLée.fr</h1>
-      <p class="neon ss-title"><img src="./images/cursor-hover.png" alt="petit rappel du cursor">Littérature transfem, romance lesbienne, crimes sordides <a
-          href="testpagesecrete.html"><img src="./images/cursor-hover.png" alt="petite page secrete du site sur un rappel du cursor"></a></p>
+      <h1 class="neon-title titre-site">Paolée.fr</h1>
+      <p class="neon ss-title"><img src="./images/cursor-hover.webp" alt="petit rappel du cursor">Littérature transfem, romance lesbienne, crimes sordides <a
+          href="testpagesecrete.html"><img src="./images/cursor-hover.webp" alt="petite page secrete du site sur un rappel du cursor"></a></p>
     </div>
 
     <div class="gallery">
-      <a href="autre.html" class="card" style="background-image: url('images/autre.png'); background-size: cover;">
+      <a href="autre.html" class="card" style="background-image: url('images/autre.webp'); background-size: cover;">
         <h2 class="neon">Autres textes</h2>
         <div class="card-content">
           <p> 
@@ -40,7 +49,7 @@
         </div>
       </a>
       <a href="roman.html" class="card"
-        style="background-image: url('images/CrèvelaDalle.png'); background-size: cover;">
+        style="background-image: url('images/CrèvelaDalle.webp'); background-size: cover;">
         <h2 class="neon">Crève la dalle</h2>
         <div class="card-content">
           <p class="CLD">Un roman publié chapitre par chapitre sur ce site ! <br>
@@ -48,7 +57,7 @@
             groupe improbable de 5 amies s'y forme dans la tendresse et le secret.</p>
         </div>
       </a>
-      <a href="apropos.html" class="card" style="background-image: url('images/apropos.png'); background-size: cover;">
+      <a href="apropos.html" class="card" style="background-image: url('images/apropos.webp'); background-size: cover;">
         <h2 class="neon">À propos</h2>
         <div class="card-content">
           <p>L'autrice <br>
@@ -63,9 +72,14 @@
     </div>
   </main>
 
-  <script src="js/cursor.js"></script>
-  <script src="js/script.js"></script>
+  <script src="js/cursor.js?v=1.0" defer></script>
+  <script src="js/script.js?v=1.0" defer></script>
 
+<script>
+  if (window.location.pathname.endsWith("index.html")) {
+    window.location.replace(window.location.pathname.replace("index.html", ""));
+  }
+</script>
 
 </body>
 
