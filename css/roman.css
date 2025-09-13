@@ -4,7 +4,9 @@
     margin-top: -40px;
 }
 
-
+ul{
+    list-style: "-";
+}
 .chapter h2 {
     font-family: 'Crevefinale', sans-serif;
     text-transform: uppercase;
@@ -101,4 +103,5 @@ li marker {
 
 ul {
     list-style-type: "- ";
+
 }
