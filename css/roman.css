@@ -7,6 +7,9 @@
 ul{
     list-style: "-";
 }
+li{
+    list-style-type: inherit;
+}
 .chapter h2 {
     font-family: 'Crevefinale', sans-serif;
     text-transform: uppercase;
@@ -105,3 +108,4 @@ ul {
     list-style-type: "- ";
 
 }
+
