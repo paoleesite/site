@@ -29,6 +29,9 @@ a {
     font-style: normal;
     font-display: swap;
 }
+ul.custom-list li::marker {
+  content: "- "; /* Ajoute un tiret à la place du point */
+}
 
 .gallery {
     width: 100%;
@@ -243,3 +246,4 @@ width: 100%;
 }
 
 }
+
