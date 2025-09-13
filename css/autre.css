@@ -1,0 +1,157 @@
+.news-nav {
+  width: 100%;
+  margin: 20px auto;
+}
+
+.news-nav h2 {
+  text-align: center;
+}
+
+#sommaire ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.news-nav ul li {
+  margin: 10px 0;
+}
+
+li marker {
+    content: "- ";
+}
+.italic{
+  font-style: italic;
+}
+.align-center{
+  text-align: center;
+}
+.align-right{
+  text-align: right;
+}
+.bold{
+  font-weight: bold;
+}
+ul {
+    list-style-type: "- ";
+}
+#news-container {
+  margin: 20px auto;
+  padding: 20px;
+  background: url('../images/ZTE.webp') repeat-y center center;
+  border-radius: 10px;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #fff;
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  border: 2px solid #ff4d4d;
+  box-shadow:
+    0 0 5px #ff4d4d,
+    0 0 10px #ff4d4d,
+    0 0 20px #ff1a1a,
+    0 0 40px #ff1a1a;
+}
+
+#news-container.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+section.card {
+  margin-bottom: 60px;
+}
+
+.neon {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+
+
+.neon-red {
+  font-family: 'Crevefinale', sans-serif;
+  text-transform: uppercase;
+  color: #ff4d4d;
+  animation: flicker 1.5s infinite;
+}
+
+.chelsea-text {
+  font-family: 'ChelseaMarket', sans-serif;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-top: 15px;
+}
+
+.times-text {
+  font-family: 'Times New Roman', serif;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  margin-top: 15px;
+}
+/* Tablettes : jusqu’à 768px */
+@media (max-width: 768px) {
+  .news-nav {
+    margin: 20px 10px;
+  }
+
+  #news-container {
+    padding: 15px;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  .neon {
+    font-size: 2.2rem;
+  }
+
+  .chelsea-text {
+    font-size: 1.2rem;
+  }
+
+  .times-text {
+    font-size: 1.1rem;
+  }
+}
+
+/* Mobiles : jusqu’à 480px */
+@media (max-width: 480px) {
+  .news-nav {
+    margin: 15px 5px;
+  }
+
+  #news-container {
+    padding: 10px;
+    font-size: 0.95rem;
+  }
+
+  .news-nav ul li {
+    margin: 8px 0;
+    text-align: center;
+  }
+
+  .neon {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .chelsea-text,
+  .times-text {
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  #download-pdf {
+    width: 100%;
+    font-size: 0.9rem;
+    padding: 10px;
+    margin-top: 15px;
+  }
+}

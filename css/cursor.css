@@ -1,0 +1,101 @@
+.blood-drop {
+  --drop-size: 20px;
+  --drop-color: rgba(200, 0, 0, 0.8);
+  --drop-shadow: 0 0 10px #ff0000;
+
+  position: fixed;
+  width: var(--drop-size);
+  height: var(--drop-size);
+  background: radial-gradient(ellipse at center, #ff0000 0%, #990000 100%);
+  border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+  pointer-events: all;
+  z-index: calc(var(--z-cursor) - 1);
+  transform: translate(-50%, -50%);
+  box-shadow: var(--drop-shadow);
+  opacity: 0;
+  animation: fall 1s ease-in forwards;
+  filter: drop-shadow(0 0 5px rgba(200, 0, 0, 0.5));
+}
+
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 70px;
+  height: 70px;
+  background: url("../images/cursor-normal.webp") no-repeat center/contain;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  z-index: 10002;
+  transition: background-image 0.2s ease;
+}
+
+
+
+.cursor--active,
+.cursor.clicked,
+.cursor-rotated .cursor {
+  transform: translate(-50%, -50%) scale(0.9) rotate(15deg);
+  filter: brightness(1.2) drop-shadow(0 0 3px rgba(0, 0, 0, 0.3));
+}
+
+
+
+.cursor-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: var(--z-cursor);
+  will-change: transform;
+  transform: translate(-50%, -50%);
+  transition: transform 0.1s ease-out;
+}
+
+.cursor.cursor-hover,
+.cursor--hover {
+  transform: translate(-50%, -50%) scale(1.2);
+  filter: drop-shadow(0 0 5px rgba(0, 0, 0, 0.3));
+  background: url("../images/cursor-hover.webp") no-repeat center/contain;
+  z-index: 10002;
+
+}
+
+
+@keyframes flicker {
+
+  0%,
+  19%,
+  21%,
+  23%,
+  25%,
+  54%,
+  56%,
+  100% {
+    text-shadow: 0 0 3px #ff4d4d, 0 0 8px #ff4d4d, 0 0 15px #ff1a1a, 0 0 30px #ff1a1a;
+    opacity: 1;
+  }
+
+  20%,
+  24%,
+  55% {
+    text-shadow: 0 0 1px #ff4d4d, 0 0 2px #ff4d4d;
+    opacity: 0.8;
+  }
+}
+
+a {
+  cursor: none;
+}
+
+
+
+a:hover~.cursor,
+button:hover~.cursor,
+input:hover~.cursor,
+[role="button"]:hover~.cursor {
+  transform: translate(-50%, -50%) scale(1.5);
+  background-color: var(--primary-color);
+  opacity: 0.5;
+}

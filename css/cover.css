@@ -1,0 +1,132 @@
+.cover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  z-index: 9999;
+  cursor: none;
+  background: url('../images/ZTE.webp') repeat-y center center;
+
+  overflow: hidden;
+}
+
+
+
+.cover .half {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  transition: transform 1s ease-in-out;
+  object-fit: fill;
+}
+
+
+
+.cover .half img {
+  position: absolute;
+  width: 200%;
+  height: 100%;
+  object-fit: fill;
+  cursor: none;
+}
+
+
+
+.cover .left {
+  left: 0;
+}
+
+
+.cover .left img {
+  left: 0;
+}
+
+
+
+.cover .right {
+  right: 0;
+}
+
+
+.cover .right img {
+  left: -100%;
+}
+
+
+
+.cover.behind {
+  z-index: -1;
+  pointer-events: all;
+}
+
+
+
+.cover.open .left {
+  transform: translateX(-80%);
+}
+
+
+.cover.open .right {
+  transform: translateX(80%);
+}
+
+
+.goback {
+  z-index: 2;
+
+}
+
+
+.site-header {
+  width: 100%;
+  display: flex;
+}
+
+@font-face {
+  font-family: 'Crevefinale';
+  src: url('../utils/Crevefinale-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+
+@font-face {
+  font-family: 'ChelseaMarket';
+  src: url('../utils/ChelseaMarket-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+a {
+  cursor: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+
+body {
+  width: 80%;
+  margin: 20px auto;
+}
+
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'ChelseaMarket', sans-serif;
+  background: url('../images/ZTE.webp') repeat-y center center;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

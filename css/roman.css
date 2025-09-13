@@ -1,0 +1,104 @@
+.chapter {
+    margin-bottom: 2rem;
+    padding-top: 60px;
+    margin-top: -40px;
+}
+
+
+.chapter h2 {
+    font-family: 'Crevefinale', sans-serif;
+    text-transform: uppercase;
+    color: #ba273f;
+    animation: flicker 2s infinite;
+}
+
+
+
+.chapter h2 {
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #eee;
+}
+
+
+
+.chapter p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.roman-content {
+    margin: 0px 16px auto;
+    line-height: 1.8;
+    text-align: start;
+}
+
+
+
+.table-of-contents {
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+.table-of-contents h2 {
+    font-family: 'Crevefinale', sans-serif;
+    text-transform: uppercase;
+    color: #ba273f;
+    animation: flicker 1s infinite;
+
+}
+
+
+
+.table-of-contents li {
+    font-family: 'Crevefinale', sans-serif;
+    text-transform: uppercase;
+    color: #ba273f;
+    animation: flicker 1s infinite;
+}
+
+
+.toc-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+
+
+.toc-list a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: block;
+}
+
+
+
+.toc-list a:hover {
+    text-decoration: underline;
+}
+
+
+
+.toc-list li {
+    margin: 0.5rem 0;
+}
+
+
+li marker {
+    content: "- ";
+}
+
+
+ul {
+    list-style-type: "- ";
+}
