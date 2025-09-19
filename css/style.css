@@ -167,9 +167,6 @@ cubic-bezier(0.25, 0.8, 0.25, 1) 0.05s;
         grid-template-columns: repeat(1, 1fr);
     }
 
-    .cursor{ 
-    display: none;  
-}
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -201,9 +198,7 @@ cubic-bezier(0.25, 0.8, 0.25, 1) 0.05s;
         transition: transform 0.3s ease, box-shadow 0.3s ease;
         z-index: 2;
     }
-    .cursor{ 
-    display: none;  
-    }
+
 }
 
 @media (min-width: 1025px) {
@@ -226,9 +221,7 @@ cubic-bezier(0.25, 0.8, 0.25, 1) 0.05s;
          color: #000;
         font-weight: bold;
 }
-    .cursor{ 
-    display: none;  
-}
+
 }
 
 
@@ -277,4 +270,8 @@ cubic-bezier(0.25, 0.8, 0.25, 1) 0.05s;
     left: 0%;
 z-index: 3;
     }
+    .cursor{ 
+    display: none;
 }
+}
+
