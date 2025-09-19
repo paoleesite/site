@@ -5,6 +5,7 @@
   text-transform: uppercase;
   color: #ba273f;
   animation: flicker-slow 1s infinite;
+  text-align: center;
 }
 
 
@@ -226,4 +227,5 @@
     text-shadow: 0 0 1px #e03b59, 0 0 2px #e03b59;
     opacity: 0.5;
   }
+
 }
