@@ -109,5 +109,10 @@ ul {
     list-style-type: "- ";
 
 }
+@media (max-width: 420px) {
+    .chapter h2 {
+     text-align: center;    }
+    }
+
 
 
