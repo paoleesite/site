@@ -121,6 +121,8 @@ a {
     font-size: clamp(12px, 1.5vw, 48px) !important;
     font-weight: bold;
     margin: 20px;
+    justify-content: center !important;
+
 }
 
 .card-content p {
@@ -282,6 +284,7 @@ z-index: 3;
     }
 
 }
+
 
 
 
