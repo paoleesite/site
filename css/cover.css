@@ -23,7 +23,7 @@
     border-radius: 5px;
     cursor: inherit;
   margin-bottom: 20px;
-      animation: flicker-random 1s infinite;
+      animation: flicker-random 2.5s infinite;
     opacity:0.6;
     font-family: 'Crevefinale', sans-serif;
     text-transform: uppercase;  
@@ -160,5 +160,6 @@ html {
   flex-direction: column;
   align-items: center;
 }
+
 
 
