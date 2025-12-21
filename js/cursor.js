@@ -1,24 +1,21 @@
-
-
-
 class CustomCursor {
     constructor(cursorSelector) {
         this.cursor = document.querySelector(cursorSelector);
         if (!this.cursor) return;
 
-
         this.mouseX = 0;
         this.mouseY = 0;
         this.rotation = 0;
-
-
         this.interactiveElements = document.querySelectorAll('a, button, .card, .button');
+
+        // Stocker les références des fonctions AVANT init()
+        this.boundUpdatePosition = (e) => this.updatePosition(e);
+        this.boundHandleClick = (e) => this.handleClick(e);
 
         this.init();
     }
 
     init() {
-
         if ('ontouchstart' in window) {
             document.body.style.cursor = 'default';
             return;
@@ -26,12 +23,11 @@ class CustomCursor {
             document.body.style.cursor = 'none';
         }
 
-
         this.updatePosition({ clientX: window.innerWidth / 2, clientY: window.innerHeight / 2 });
 
-
-        document.addEventListener('mousemove', e => this.updatePosition(e));
-        document.addEventListener('click', e => this.handleClick(e));
+        // Utiliser les références stockées
+        document.addEventListener('mousemove', this.boundUpdatePosition);
+        document.addEventListener('click', this.boundHandleClick);
 
         this.initInteractiveHover();
     }
@@ -45,12 +41,10 @@ class CustomCursor {
     }
 
     handleClick(e) {
-
         this.cursor.style.transform = 'translate(-50%, -50%) rotate(25deg)';
         setTimeout(() => {
             this.cursor.style.transform = 'translate(-50%, -50%) rotate(0deg)';
         }, 200);
-
 
         this.createDroplets(e.clientX, e.clientY);
     }
@@ -111,13 +105,15 @@ class CustomCursor {
 
     cleanup() {
         document.body.style.cursor = '';
-        document.removeEventListener('mousemove', e => this.updatePosition(e));
-        document.removeEventListener('click', e => this.handleClick(e));
+        // Utiliser les références stockées pour supprimer les listeners
+        document.removeEventListener('mousemove', this.boundUpdatePosition);
+        document.removeEventListener('click', this.boundHandleClick);
     }
 }
-
 
 document.addEventListener('DOMContentLoaded', () => {
     const customCursor = new CustomCursor('.cursor');
     window.addEventListener('beforeunload', () => customCursor.cleanup());
 });
+
+
