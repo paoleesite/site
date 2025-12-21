@@ -100,7 +100,7 @@ li{
 }
 
 
-li marker {
+li::marker {
     content: "- ";
 }
 
@@ -111,8 +111,7 @@ ul {
 }
 @media (max-width: 420px) {
     .chapter h2 {
-     text-align: center;    }
+        text-align: center;
     }
-
-
+}
 

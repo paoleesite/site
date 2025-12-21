@@ -1,5 +1,5 @@
 .news-nav {
-  width: 100%;
+  width: 97%;
   margin: 20px auto;
 }
 
@@ -40,9 +40,10 @@
   margin: 10px 0;
 }
 
-li marker {
-    content: "- ";
+li::marker {
+  content: "- ";
 }
+
 .italic{
   font-style: italic;
 }

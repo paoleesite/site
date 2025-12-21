@@ -1,3 +1,13 @@
+:root {
+    --white: #ffffff;
+    --gray-500: #6b7280;
+    --gray-700: #374151;
+    --gray-200: #e5e7eb;
+    --primary-color: #ba273f;
+    --accent-color: #ec112e;
+    --border-radius-lg: 8px;
+    --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
  .legal-page {
      max-width: 800px;
      margin: 4rem auto;
