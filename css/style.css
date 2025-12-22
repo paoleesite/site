@@ -39,7 +39,6 @@ ul.custom-list li::marker {
     box-sizing: border-box;
     display: grid;
     grid-template-columns: 1fr;
-    height: 100%;
 }
 
 .gallery .card {
@@ -213,6 +212,7 @@ justify-content: space-evenly;
 @media (min-width: 1025px) {
     .gallery {
         grid-template-columns: repeat(3, 1fr);
+         height: 100%;
     }
 
     .gallery .card {
@@ -285,6 +285,7 @@ z-index: 3;
     }
 
 }
+
 
 
 
