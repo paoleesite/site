@@ -46,7 +46,7 @@ ul.custom-list li::marker {
   }
   
   .gallery > * {
-    flex: 0 0 calc(33.3333% - 1rem);
+    flex: 0 0 calc(33.3333% - 0.1rem);
   }
   
 
@@ -293,6 +293,7 @@ z-index: 3;
     }
 
 }
+
 
 
 
