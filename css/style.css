@@ -7,6 +7,7 @@ html {
     background-color: #000;
     color: #fff;
     display: flex;
+    width: 100%;
 }
 
 a {
@@ -15,6 +16,10 @@ a {
 ul{
     list-style: "-";
 }
+.container {
+    width: 100%;
+    height: 100%;
+    }
 @font-face {
     font-family: 'Crevefinale';
     src: url('../utils/Crevefinale-Regular.ttf') format('truetype');
@@ -35,11 +40,15 @@ ul.custom-list li::marker {
 }
 
 .gallery {
-    width: 100%;
-    box-sizing: border-box;
-    display: grid;
-    grid-template-columns: 1fr;
-}
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+  }
+  
+  .gallery > * {
+    flex: 0 0 calc(33.3333% - 1rem);
+  }
+  
 
 .gallery .card {
     position: relative;
@@ -54,6 +63,7 @@ ul.custom-list li::marker {
     justify-content: center;
     align-items: center;
     height: 100%;
+    width: 100%;
     max-width: 100%;
 }
 
@@ -168,17 +178,15 @@ justify-content: space-evenly;
 
 @media (min-width: 600px) and (max-width: 767px) {
     .gallery {
-        grid-template-columns: repeat(1, 1fr);
-    }
+        flex-direction: column;
+        }
     .cursor{ 
     display: none;
 }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .gallery {
-        grid-template-columns: repeat(1, 1fr);
-    }
+
 
     .gallery .card {
         aspect-ratio: 3/4;
@@ -190,11 +198,11 @@ justify-content: space-evenly;
     }
 
     .gallery .card h2 {
-        font-size:clamp(12px, 4vw, 48px);
+        font-size:clamp(12px, 3vw, 48px);
     }
 
     .card-content p {
-        font-size: clamp(24px, 5vw, 48px);
+        font-size: clamp(24px, 3vw, 48px);
         opacity: 1;
         max-height: none;
     }
@@ -210,10 +218,6 @@ justify-content: space-evenly;
 }
 
 @media (min-width: 1025px) {
-    .gallery {
-        grid-template-columns: repeat(3, 1fr);
-         height: 100%;
-    }
 
     .gallery .card {
         overflow: hidden;
@@ -239,6 +243,7 @@ justify-content: space-evenly;
 @media (max-width: 360px) {
     .gallery {
         gap: 0.8rem;
+        flex-direction: column;
     }
 .ss-title{
     margin-bottom: 0px!important;
@@ -266,6 +271,9 @@ justify-content: space-evenly;
 .cursor{ 
     display: none;
 }
+.gallery {flex-direction: column;
+height: auto;
+}
 
 }
 @media (max-width: 1030px) {
@@ -273,7 +281,7 @@ justify-content: space-evenly;
 }
 @media (max-width: 1025px) {
  .CLD {
-    font-size: clamp(12px, 4vw, 48px) !important;
+    font-size: clamp(12px, 2vw, 48px) !important;
     padding: 2%;
     margin: 10%;
   }
@@ -285,7 +293,6 @@ z-index: 3;
     }
 
 }
-
 
 
 
